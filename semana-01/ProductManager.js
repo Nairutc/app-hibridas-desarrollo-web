@@ -32,7 +32,7 @@ class ProductManager {
         }
 
         return product;
-    }
+    }   
     }
 
-    module.exports = ProductManager;
+module.exports = ProductManager;
