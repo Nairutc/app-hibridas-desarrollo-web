@@ -1,6 +1,7 @@
-const ProductManager = require("./ProductManager").default;
+const ProductManager = require("./ProductManager"); //Esto importa la clase ProductManager desde el archivo ProductManager.js.
 
-const manager = new ProductManager();
+const manager = new ProductManager(); //Acá creamos un objeto nuevo usando la clase. Cuando se ejecuta new ProductManager(), automáticamente se ejecuta el constructor() de la clase, entonces se crea:
+//this.products = [];
 
     manager.addProduct({
     id: 1,
