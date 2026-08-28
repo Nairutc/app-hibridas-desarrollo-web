@@ -1,26 +1,15 @@
-const nombre = "Nairut";
-console.log('Hola, ' + nombre + '! Bienvenido a la semana 1 de app hibridas.');
+const CareerManager = require ('./CareerManager');
 
-//objeto
+const manager = new CareerManager();
+//manager.addSubject({id:1, name:'Programación', semester:1, hours:2});
+//manager.addSubject({id:2, name:'Matemáticas', semester:1, hours:3});
+//manager.addSubject({id:3, name:'PWA', semester:3, hours:2});
+//manager.addSubject({id:4, name:'Proyecto final', semester:4, hours:4});
+manager.addSubject({id:5, name:'Etica', semester:4, hours:2});
 
-const persona ={
-    nombre: "Nairut",
-    email: "nairutc@gmail.com",
-    edad:34,
-    ciudad: "Caracas",
-    mostrarCiudad(){
-        console.log('la ciudad es: ' + this.ciudad); //this hace referencia a este objeto
-    }
-    
-/* mostrarCiudad: function(){
-        console.log('la ciudad es: ' + this.ciudad);
-    }
-*/    
-}
+const materias = manager.getSubjects();
+console.table(materias);
 
-persona.edad = 35;
-persona.mostrarCiudad();
-
-console.log('su nombre es: ' + persona.nombre + ' su email es: ' + persona.email);
-console.table(persona);
+const materia = manager.getSubjectById(3);
+console.log('materia encontrada: ', materia);
 

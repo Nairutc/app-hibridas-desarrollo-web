@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Programación",
+    "semester": 1,
+    "hours": 2
+  },
+  {
+    "id": 2,
+    "name": "Matemáticas",
+    "semester": 1,
+    "hours": 3
+  },
+  {
+    "id": 3,
+    "name": "PWA",
+    "semester": 3,
+    "hours": 2
+  },
+  {
+    "id": 4,
+    "name": "Proyecto final",
+    "semester": 4,
+    "hours": 4
+  },
+  {
+    "id": 5,
+    "name": "Etica",
+    "semester": 4,
+    "hours": 2
+  }
+]
