@@ -6,15 +6,27 @@
     "id": "2d6758da-9135-4b55-b636-000a13c09bb8"
   },
   {
-    "name": "Nairut",
-    "email": "nairutc@example.com",
-    "password": "password123",
-    "id": "526b78c2-f044-44ee-a6cf-25321c220832"
+    "name": "pedro",
+    "email": "pedro@gmail.com",
+    "password": "1234",
+    "id": "428d64e9-71ab-4c3c-aad3-30921c21ac91"
   },
   {
-    "name": "Nairut",
-    "email": "nairutc@example.com",
-    "password": "password123",
-    "id": "2443cb82-4a20-4907-b484-b0fcc7c73f7d"
+    "name": "Francisco",
+    "email": "frank@gmail.com",
+    "password": "$2b$10$1TET7ZJT2IJnPgrJ1c0JbOtUi3L4ITz9LFi4pwITLL3HW6u.ysF8K",
+    "id": "4b0ce36d-b8f6-4d7b-8028-93170e77bc11"
+  },
+  {
+    "name": "juana",
+    "email": "juana@gmail.com",
+    "password": "$2b$10$Lc3jL63F6DoFPojjwXnHBuU4.9xc1doMa.DFOvwNcRqHYIo6GdoZW",
+    "id": "ac1bc324-8ed7-4f2d-9c0a-74ccb8c0279b"
+  },
+  {
+    "name": "jose",
+    "email": "jose@example.com",
+    "password": "$2b$10$gAMBxncm92uffPIGt7wX0.RVrITUSPgKvO/uNoLNVjhJM1.1aDnE6",
+    "id": "33338d80-5f6c-45e1-b695-5ded006fddc9"
   }
 ]

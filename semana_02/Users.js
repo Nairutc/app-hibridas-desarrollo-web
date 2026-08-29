@@ -20,7 +20,7 @@ class Users {
     this.users.push(user);
     //escribimos en el disco
     this.saveUsers();
-    return user;
+    return user.id;
     }
     getUsers() {
     return this.users;
@@ -50,9 +50,10 @@ class Users {
     const index = this.users.findIndex((user) => user.id === id); 
     if( index === -1 ) {
         console.error("No se encontró el usuario con id: " + id);
-        return;
+        return 'Not Found';
     }
     this.users.splice(index,1);
+    this.saveUsers();
     return 'ok';
     }
     saveUsers(){
