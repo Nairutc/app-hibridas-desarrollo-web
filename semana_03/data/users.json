@@ -28,5 +28,11 @@
     "email": "jose@example.com",
     "password": "$2b$10$gAMBxncm92uffPIGt7wX0.RVrITUSPgKvO/uNoLNVjhJM1.1aDnE6",
     "id": "33338d80-5f6c-45e1-b695-5ded006fddc9"
+  },
+  {
+    "name": "Lucila",
+    "email": "lu@gmail.com",
+    "password": "$2b$10$gbd3dGAaawpBK1P2W8yjUuXiLM4C9hL4uVnWrkktgbCTpEg7dMOQ2",
+    "id": "feee7fb0-32de-4638-83fe-5db50340ee26"
   }
 ]
