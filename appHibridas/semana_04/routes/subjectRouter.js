@@ -1,13 +1,15 @@
 import express from 'express';
+import subjectController from '../controllers/SubjectController.js';
+
+const controller = subjectController;
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.json({ message:'succes', data:[] })
-});
-router.get('/:id', (req, res) => {});
-router.post('/', (req, res) => {});
-router.put('/:id', (req, res) => {});
-router.delete('/:id', (req, res) => {});
+router.get('/',       controller.getAll);
+router.get('/:id',    controller.getById);
+router.post('/',      controller.create);
+router.put('/:id',    controller.update);
+router.delete('/:id', controller.delete);
 
 export default router;
+
