@@ -1,4 +1,5 @@
 import Subject from '../models/subjectModel.js';
+import Career from '../models/careerModel.js';
 
 class SubjectController {
     async getAll(req, res)  {
@@ -44,11 +45,19 @@ class SubjectController {
     async create(req, res)  {
     try{
         const { name, semester, hours, career} = req.body;
-        if (!name || !semester || !hours || !career) {
+        if (!name || !semester || !hours) {
             return res.status(403).send("faltan parámetros");
         }
+
+        const careerExists = await Career.findById(career);
+        if(!careerExists){
+            return res.status(404).json({   
+                message: 'Carrera no encontrada'
+            });
+        } 
+
         const subject = await Subject.create({ name, semester, hours, career });
-    
+
         res.json({ 
             message: 'Success', 
             data: subject
