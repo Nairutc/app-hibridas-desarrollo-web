@@ -1,45 +1,20 @@
 import express from 'express';
-import { 
-    getUsers, 
-    getUserById, 
-    postUser, 
-    deleteUser 
-    } 
-from "../controllers/userController.js"
+import UserController from "../controllers/userController.js";
+import authMidlleware from "../middlewares/authMiddleware.js";
+import roleMiddleware from '../middlewares/roleMiddleware.js';
+
+
 
 const router = express.Router();
+
+const controller = new UserController();
 ;
 
-router.get('/',       getUsers);
-router.get('/:id',    getUserById);
-router.post('/',      postUser);
-router.delete('/:id', deleteUser);
+router.get('/',    authMidlleware, roleMiddleware,    controller.getAll);
+router.get('/:id', authMidlleware, roleMiddleware,    controller.getById);
+router.post('/',   authMidlleware, roleMiddleware,      controller.create);
+router.put('/:id', authMidlleware, roleMiddleware,    controller.update);
+router.delete('/:id', authMidlleware, roleMiddleware, controller.delete);
 
-router.get('/register', (request, response) => {
-    response.send(`<!DOCTYPE html>
-            <html lang="es">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Registro</title>
-            </head>
-            <body>
-                <form action ="/api/users" method="post" enctype=aplication/x-www-form-urlendcoded>
-                    <label for="name">Nombre</label>
-                    <input id="name" name="name" type = "text">
-
-                    <label for="email">Email</label>
-                    <input id= "email" name="email" type = "text">
-
-                    <label for="password">Contraseña</label>
-                    <input id= "password" name="password" type = "password">
-
-                    <button type="submit">Registrarme</button>
-                </form>
-                
-            </body>
-            </html>`
-        );
-});
 
 export default router;

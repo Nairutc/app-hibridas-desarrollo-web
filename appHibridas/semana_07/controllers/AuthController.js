@@ -87,7 +87,8 @@ class AuthController {
 
         const payload = {
             _id:user._id,
-            name:user.name
+            name:user.name,
+            role: user.role
         }
 
         //luego generamos el token
