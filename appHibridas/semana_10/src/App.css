@@ -17,6 +17,10 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .hero {
   position: relative;
 
@@ -181,4 +185,41 @@
     right: 0;
     border-right-color: var(--border);
   }
+}
+
+header{
+  background-color: teal;
+  min-height: 15vh;
+  color:aliceblue;
+}
+
+header h1 {
+  color:blanchedalmond;
+}
+
+footer{
+  background-color: black;
+  color: aliceblue;
+  padding: 1rem;
+}
+
+main {
+  min-height: 75vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+main p{
+  color:black;
+}
+
+.alert {
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  background-color: #bc2910ac;
+  text-align: center;
+  color: aliceblue;
+  border-radius: 5px;
+
 }
