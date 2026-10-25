@@ -1,7 +1,7 @@
 function Alert(props){
     const { msg, type, number } = props;
 
-    return <h4 className='alert'> {msg} {number + 1} {type}  </h4>
+    return <h4 className='alert'> {msg} {number} {type}  </h4>
     
 }
 
